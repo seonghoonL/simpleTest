@@ -90,6 +90,7 @@ export default function HomePage() {
 
       <footer className="py-12 text-center text-slate-400 text-sm">
         <p>© 2026 심리분석 플랫폼 프로젝트. All rights reserved.</p>
+        <p>문의 및 오류 신고 tkfkds44@naver.com</p>
       </footer>
     </main>
   );
