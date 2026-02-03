@@ -32,7 +32,7 @@ export default function HomePage() {
     },
     {
       id: 'politics',
-      title: '정치 성향 테스트',
+      title: '정치성향 테스트',
       description: '나의 사회적 가치관을 확인해보세요.',
       icon: '⚖️',
       color: 'bg-slate-100',
