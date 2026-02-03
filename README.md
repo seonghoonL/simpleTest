@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 심리 테스트 & 이상형 월드컵 프로젝트
 
-## Getting Started
+Next.js와 React를 활용하여 제작한 간단한 웹 기반 테스트 서비스입니다.  
+사용자가 복잡한 입력 없이 **1:1 선택 방식**만으로 결과를 확인할 수 있도록 구성하였습니다.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 📌 프로젝트 소개
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+이 프로젝트는 다양한 심리 테스트와 이상형 월드컵 콘텐츠를  
+직관적이고 빠르게 즐길 수 있도록 제작된 웹 애플리케이션입니다.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+사용자는 두 개의 선택지 중 하나를 고르는 방식으로  
+간단하게 자신의 취향과 성향을 확인할 수 있습니다.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧩 주요 기능
 
-To learn more about Next.js, take a look at the following resources:
+### 1. 이상형 월드컵
+- **남자 아이돌 이상형 월드컵**
+- **여자 아이돌 이상형 월드컵**
+- 32강 토너먼트 방식
+- 이미지 기반 1:1 선택
+- 최종 우승 결과 출력
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 2. 심리 테스트
+- **간단 MBTI 테스트**
+- **정치 성향 테스트**
+- 복잡한 설문 대신 선택형 구조
+- 빠른 결과 확인 가능
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ⚙️ 기술 스택
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Next.js**
+- **React**
+- **TypeScript**
+- **CSS / Tailwind CSS**
+- Git & GitHub
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🎯 개발 목적
+
+- 복잡한 설문 형식이 아닌 **직관적인 선택 UI 제공**
+- 모바일 및 PC 환경에서 모두 사용 가능한 인터페이스 구현
+- 사용자 참여형 콘텐츠 제작 경험 확보
+- React와 Next.js 기반 프로젝트 구조 학습
+
+---
+
+## 🖥️ 실행 방법
+
+배포 예정..
