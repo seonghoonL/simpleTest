@@ -44,7 +44,6 @@ const PLAYERS: Player[] = [
 
 ];
 
-// 배열 섞기
 function shuffle<T>(arr: T[]) {
   const copy = [...arr];
   for (let i = copy.length - 1; i > 0; i--) {
@@ -187,7 +186,6 @@ export default function GoodfacePage() {
     boxShadow: "0 0 0 rgba(0,0,0,0)",
   };
 
-  /**  우승 화면 */
   if (champion) {
     return (
       <main
@@ -263,7 +261,6 @@ export default function GoodfacePage() {
 
   if (!left || !right) return null;
 
-  /**  진행 화면 */
   return (
     <main
       style={{
@@ -303,7 +300,6 @@ export default function GoodfacePage() {
             gap: 32,
           }}
         >
-          {/* 왼쪽 카드 선택 */}
           <button
             onClick={() => pick(left)}
             style={cardBtnBase}
@@ -321,7 +317,6 @@ export default function GoodfacePage() {
             <Card player={left} />
           </button>
 
-          {/* VS */}
           <div
             style={{
               fontSize: 56,
@@ -334,7 +329,6 @@ export default function GoodfacePage() {
             VS
           </div>
 
-          {/* 오른쪽 카드 선택 */}
           <button
             onClick={() => pick(right)}
             style={cardBtnBase}
