@@ -38,6 +38,7 @@ Next.js와 React를 활용하여 제작한 간단한 웹 기반 테스트 서비
 - **React**
 - **TypeScript**
 - **CSS / Tailwind CSS**
+- **vercel**
 - Git & GitHub
 
 ---
@@ -52,5 +53,5 @@ Next.js와 React를 활용하여 제작한 간단한 웹 기반 테스트 서비
 ---
 
 ## 🖥️ 실행 방법
-
-배포 예정..
+ - vercel을 활용하여 빠르게 업데이트 및 유지보수 할 수 있게 배포
+ - URL - https://simple-test-one.vercel.app/
