@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useEffect } from "react";
-
+import Link from "next/link";
 type Axis = "L" | "R";
 type Question = { text: string; yes: Axis; no: Axis };
 
@@ -365,7 +365,7 @@ export default function PMain() {
                 <GaugeRow leftLabel="진보" rightLabel="보수" leftCount={scores.L} rightCount={scores.R} sky={SKY} ink={INK} />
               </div>
 
-              <div style={{ marginTop: 18, display: "flex", justifyContent: "center" }}>
+              <div style={{ marginTop: 18, display: "flex", justifyContent: "center", gap: 12 }}>
                 <button
                   onClick={reset}
                   onMouseEnter={onBtnHover}
@@ -390,6 +390,32 @@ export default function PMain() {
                 >
                   다시하기
                 </button>
+
+                <Link href="/" style={{ textDecoration: "none" }}>
+                  <button
+                    onMouseEnter={onBtnHover}
+                    onMouseLeave={onBtnLeave}
+                    onPointerDown={onBtnDown}
+                    onPointerUp={onBtnUp}
+                    onPointerCancel={onBtnUp}
+                    style={{
+                      borderRadius: 999,
+                      padding: "12px 18px",
+                      background: "#ffffff",
+                      border: `3px solid ${SKY}`,
+                      fontSize: 18,
+                      fontWeight: 900,
+                      cursor: "pointer",
+                      boxShadow: "0 8px 0 rgba(0,0,0,0.14)",
+                      color: "#111827",
+                      fontFamily: FONT,
+                      transition: "transform 140ms ease, box-shadow 140ms ease, filter 140ms ease",
+                      ...text3d,
+                    }}
+                  >
+                    홈으로
+                  </button>
+                </Link>
               </div>
             </>
           )}

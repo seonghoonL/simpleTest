@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState, useEffect } from "react";
-
+import Link from "next/link";
 type Player = {
   id: number;
   name: string;
@@ -186,50 +186,76 @@ export default function GoodfacePage() {
     boxShadow: "0 0 0 rgba(0,0,0,0)",
   };
 
-  if (champion) {
-    return (
-      <main
-        style={{
-          minHeight: "100vh",
-          background: BG,
-          padding: "26px 18px 36px",
-          display: "flex",
-          justifyContent: "center",
-          fontFamily: FONT,
-        }}
-      >
-        <section style={{ width: "100%", maxWidth: 1000 }}>
-          <div
+if (champion) {
+  return (
+    <main
+      style={{
+        minHeight: "100vh",
+        background: BG,
+        padding: "26px 18px 36px",
+        display: "flex",
+        justifyContent: "center",
+        fontFamily: FONT,
+      }}
+    >
+      <section style={{ width: "100%", maxWidth: 1000 }}>
+        <div
+          style={{
+            textAlign: "center",
+            marginBottom: 18,
+            border: `3px solid ${SKY}`,
+            background: "#fff",
+            borderRadius: 26,
+            padding: "18px 14px",
+            boxShadow: "0 18px 40px rgba(0,0,0,0.10)",
+          }}
+        >
+          <h1
             style={{
-              textAlign: "center",
-              marginBottom: 18,
-              border: `3px solid ${SKY}`,
-              background: "#fff",
-              borderRadius: 26,
-              padding: "18px 14px",
-              boxShadow: "0 18px 40px rgba(0,0,0,0.10)",
+              fontSize: 32,
+              fontWeight: 900,
+              margin: 0,
+              color: INK,
+              ...text3d,
             }}
           >
-            <h1
-              style={{
-                fontSize: 32,
-                fontWeight: 900,
-                margin: 0,
-                color: INK,
-                ...text3d,
-              }}
-            >
-              남자 아이돌 이상형 월드컵 우승
-            </h1>
-          </div>
+            남자 아이돌 이상형 월드컵 우승
+          </h1>
+        </div>
 
-          <div style={{ maxWidth: 420, margin: "0 auto" }}>
-            <Card player={champion} isChampion />
-          </div>
+        <div style={{ maxWidth: 420, margin: "0 auto" }}>
+          <Card player={champion} isChampion />
+        </div>
 
-          <div style={{ display: "flex", justifyContent: "center" }}>
+        <div style={{ display: "flex", justifyContent: "center", gap: 12 }}>
+          <button
+            onClick={reset}
+            onMouseEnter={onBtnHover}
+            onMouseLeave={onBtnLeave}
+            onPointerDown={onBtnDown}
+            onPointerUp={onBtnUp}
+            onPointerCancel={onBtnUp}
+            style={{
+              marginTop: 24,
+              borderRadius: 999,
+              padding: "12px 18px",
+              background: "#ffffff",
+              border: `3px solid ${SKY}`,
+              fontSize: 18,
+              fontWeight: 900,
+              cursor: "pointer",
+              boxShadow: "0 12px 0 rgba(0,0,0,0.18)",
+              color: INK,
+              fontFamily: FONT,
+              transition: "transform 140ms ease, box-shadow 140ms ease, filter 140ms ease",
+              ...text3d,
+            }}
+          >
+            다시 하기
+          </button>
+
+          <Link href="/" style={{ textDecoration: "none" }}>
             <button
-              onClick={reset}
               onMouseEnter={onBtnHover}
               onMouseLeave={onBtnLeave}
               onPointerDown={onBtnDown}
@@ -251,13 +277,15 @@ export default function GoodfacePage() {
                 ...text3d,
               }}
             >
-              다시 하기
+              홈으로
             </button>
-          </div>
-        </section>
-      </main>
-    );
-  }
+          </Link>
+        </div>
+      </section>
+    </main>
+  );
+}
+
 
   if (!left || !right) return null;
 
